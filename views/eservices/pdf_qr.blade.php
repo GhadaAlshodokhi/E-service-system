@@ -16,7 +16,7 @@
             <div class="card-body">
                 <b>الاسم: </b> {{$user_loged_in->name}} <br>
                 <b>الادارة: </b> {{$user_loged_in->department}} <br>
-                <b>تاريخ التفعيل : </b> {{$user_loged_in->hr_manegar_approve_at}}<br> 
+                <b>تاريخ التفعيل : </b> {{$user_loged_in->hr_maneger_approve_at}}<br> 
                 <b>تاريخ نهايه البطاقة : </b> {{$user_loged_in->card_expire_date_at}}<br>
                 {{QrCode::generate($user_loged_in->card_expire_date_at)}}
             </div>
