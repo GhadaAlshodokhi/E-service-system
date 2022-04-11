@@ -27,8 +27,8 @@ class EmployeeExport implements FromCollection,ShouldAutoSize ,WithMapping , Wit
         return [
                 $user->name,
                 $user->department,
-                $user->hr_manegar_approve_at ,
-                $user->card_expire_date_at = date('Y-m-d', strtotime('+1 year', strtotime($user->hr_manegar_approve_at)))
+                $user->hr_maneger_approve_at ,
+                $user->card_expire_date_at = date('Y-m-d', strtotime('+1 year', strtotime($user->hr_maneger_approve_at)))
                 
             ];
     }
